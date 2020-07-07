@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '-+fq$wco!_*z%x3jz!ryorz8!$a983qv)_$f6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['localhost', 'ftpalash.herokuapp.com']
 
 
 # Application definition
