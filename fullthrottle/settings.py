@@ -126,5 +126,5 @@ USE_TZ = False
 
 STATIC_URL = '/static/'
 
-db_from_env = dj_database_url.configure(conn_max_age=500)
+db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
