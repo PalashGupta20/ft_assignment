@@ -28,6 +28,10 @@ class Command(BaseCommand):
                         )
                 if not created:
                     self.stdout.write(f'User {user_id} already exists!')
+                    if user.real_name != name:
+                        self.stdout.write(f'name provided does not match! Proceeding with user_id')
+                    if user.tz_info != tz:
+                        self.stdout.write('tz info provided does not match! Proceeding with user_id')
                 else:
                     self.stdout.write(f'User {user_id} added!')
 
