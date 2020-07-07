@@ -5,6 +5,9 @@ import json
 
 from .models import User
 
+def index(request):
+    return HttpResponse('Index of fullthrottle assignment')
+
 def get_user_details(request):
     data = {'ok': True, 'members': []}
     try:
